@@ -1,7 +1,7 @@
 site_name: "Workshop Template"
 site_description: "A suggested template for hosting workshop in SSTIA"
 site_author: "CedricHaskell"
-site_url: "https://cedrichaskell.github.io/WorkshopTemplate"
+site_url: "https://cedrichaskell.github.io/WorkshopTemplate/"
 repo_url: "https://github.com/CedricHaskell/WorkshopTemplate"
 repo_name: WorkshopTemplate
 
@@ -36,7 +36,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  custom_dir: docs/overrides
+  # custom_dir: overrides
 
 markdown_extensions:
   - toc:
@@ -64,16 +64,27 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Chinese
+      link: /zh/
+      lang: zh
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://unpkg.com/giscus
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
 
 plugins:
   - search
   - mkdocs-video
   - i18n:
       docs_structure: folder
+      reconfigure_material: true
+      reconfigure_search: true
       languages:
         - locale: en
           default: true
