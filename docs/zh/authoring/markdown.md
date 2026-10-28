@@ -233,4 +233,4 @@ discussions: true             # 开启评论线程（见讨论区）
 
 ## 更多扩展
 
-`pymdownx.tasklist` 与 `pymdownx.tabbed` 在本模板中已启用。其他扩展可以用同样的方式添加——见[自定义](../advanced/customization.md)，其中有完整的步骤演示。
+本模板中已启用大部分常用拓展。其他扩展可以用同样的方式添加——见[自定义](../advanced/customization.md)，其中有完整的步骤演示。

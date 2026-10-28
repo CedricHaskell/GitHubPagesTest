@@ -233,4 +233,4 @@ discussions: true                 # enable the comment thread (see Discussion Bo
 
 ## More extensions
 
-`pymdownx.tasklist` and `pymdownx.tabbed` are enabled in this template. Further extensions can be added the same way — see [Customization](../advanced/customization.md), which walks through the pattern.
+This template has already enabled the most common extensions. Further extensions can be added the same way — see [Customization](../advanced/customization.md), which walks through the pattern.
