@@ -70,7 +70,7 @@ extra:
       link: /
       lang: en
     - name: Chinese
-      link: /zh/
+      link: zh/
       lang: zh
 
 extra_javascript:
