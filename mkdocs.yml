@@ -6,7 +6,7 @@ repo_url: "https://github.com/CedricHaskell/WorkshopTemplate"
 repo_name: WorkshopTemplate
 
 theme:
-  name: materialx
+  name: material
   language: en
   favicon: assets/favicon.svg
   logo: assets/logo.svg
@@ -36,7 +36,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  # custom_dir: overrides
+  custom_dir: docs/overrides
 
 markdown_extensions:
   - toc:
@@ -64,12 +64,15 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
+hooks:
+  - docs/scripts/hooks.py
+
 extra:
   alternate:
     - name: English
       link: .
       lang: en
-    - name: Chinese
+    - name: 简体中文
       link: zh/
       lang: zh
 
@@ -83,7 +86,7 @@ plugins:
   - mkdocs-video
   - i18n:
       docs_structure: folder
-      reconfigure_material: true
+      reconfigure_material: false
       reconfigure_search: true
       languages:
         - locale: en
