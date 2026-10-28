@@ -42,6 +42,9 @@ markdown_extensions:
   - toc:
       permalink: true
   - tables
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -86,7 +89,7 @@ plugins:
   - mkdocs-video
   - i18n:
       docs_structure: folder
-      reconfigure_material: false
+      reconfigure_material: true
       reconfigure_search: true
       languages:
         - locale: en
@@ -98,10 +101,38 @@ plugins:
           build: true
           nav_translations:
             Home: 首页
+            Getting Started: 快速上手
+            Introduction: 模板介绍
+            Deploy with GitHub Pages: 部署到 GitHub Pages
+            Structure Overview: 结构总览
+            Authoring: 内容编写
+            Add a New Page: 新建页面
+            Markdown Basics: Markdown 基础
+            Theme & Colors: 主题与配色
+            Images & Videos: 图片与视频
+            Bilingual Support: 双语支持
+            Discussion Board: 讨论区
+            Advanced: 高级功能
+            Customization: 自定义
+            Game Demo: 小游戏 Demo
             About: 关于
   - minify:
       minify_html: true
 
 nav:
   - Home: index.md
+  - Getting Started:
+      - Introduction: getting-started/introduction.md
+      - Deploy with GitHub Pages: getting-started/deployment.md
+      - Structure Overview: getting-started/structure.md
+  - Authoring:
+      - Add a New Page: authoring/new-pages.md
+      - Markdown Basics: authoring/markdown.md
+      - Theme & Colors: authoring/theme-colors.md
+      - Images & Videos: authoring/media.md
+      - Bilingual Support: authoring/bilingual.md
+  - Discussion Board: discussion.md
+  - Advanced:
+      - Customization: advanced/customization.md
+      - Game Demo: advanced/game-demo.md
   - About: about.md
