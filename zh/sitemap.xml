@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/about/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/about/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/about/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/discussion/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/discussion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/discussion/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/advanced/customization/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/advanced/customization/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/advanced/customization/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/advanced/game-demo/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/advanced/game-demo/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/advanced/game-demo/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/authoring/bilingual/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/bilingual/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/bilingual/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/authoring/markdown/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/markdown/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/markdown/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/authoring/media/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/media/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/media/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/authoring/new-pages/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/new-pages/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/new-pages/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/authoring/theme-colors/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/theme-colors/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/theme-colors/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/getting-started/deployment/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/getting-started/deployment/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/getting-started/deployment/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/getting-started/introduction/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/getting-started/introduction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/getting-started/introduction/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/getting-started/structure/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/getting-started/structure/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/getting-started/structure/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/about/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/about/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/about/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/discussion/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/discussion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/discussion/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/advanced/customization/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/advanced/customization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/advanced/customization/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/advanced/game-demo/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/advanced/game-demo/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/advanced/game-demo/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/bilingual/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/bilingual/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/bilingual/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/markdown/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/markdown/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/markdown/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/media/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/media/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/media/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/new-pages/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/new-pages/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/new-pages/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/theme-colors/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/authoring/theme-colors/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/authoring/theme-colors/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/getting-started/deployment/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/getting-started/deployment/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/getting-started/deployment/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/getting-started/introduction/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/getting-started/introduction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/getting-started/introduction/"/>
+    </url>
+    <url>
+        <loc>https://cedrichaskell.github.io/WorkshopTemplate/zh/getting-started/structure/</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://cedrichaskell.github.io/WorkshopTemplate/zh/getting-started/structure/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cedrichaskell.github.io/WorkshopTemplate/getting-started/structure/"/>
+    </url>
+</urlset>

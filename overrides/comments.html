@@ -1,0 +1,67 @@
+{% if page and page.meta and page.meta.discussions %}
+<section id="comments">
+  <hr />
+  <h2 id="__comments">Comments</h2>
+
+  <script>
+    (function () {
+      var scheme = document.body.getAttribute("data-md-color-scheme");
+      var theme = scheme === "slate" ? "transparent_dark" : "light";
+      document.write(
+        '<script src="https://giscus.app/client.js"' +
+          ' data-repo="CedricHaskell/WorkshopTemplate"' +
+          ' data-repo-id="R_kgDOVX7Q2A"' +
+          ' data-category="Announcements"' +
+          ' data-category-id="DIC_kwDOVX7Q2M4DJ0WQ"' +
+          ' data-mapping="pathname"' +
+          ' data-strict="1"' +
+          ' data-reactions-enabled="1"' +
+          ' data-emit-metadata="0"' +
+          ' data-input-position="bottom"' +
+          ' data-theme="' +
+          theme +
+          '"' +
+          ' data-lang="en"' +
+          ' crossorigin="anonymous"' +
+          " async><\/script>",
+      );
+    })();
+  </script>
+
+  <script>
+    function getGiscusTheme() {
+      var scheme = document.body.getAttribute("data-md-color-scheme");
+      return scheme === "slate" ? "transparent_dark" : "light";
+    }
+
+    function updateGiscusTheme() {
+      var iframe = document.querySelector("iframe.giscus-frame");
+      if (iframe) {
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: getGiscusTheme() } } },
+          "https://giscus.app",
+        );
+      }
+    }
+
+    function waitForGiscus() {
+      var iframe = document.querySelector("iframe.giscus-frame");
+      if (iframe) {
+        iframe.addEventListener("load", function () {
+          updateGiscusTheme();
+        });
+      } else {
+        requestAnimationFrame(waitForGiscus);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", waitForGiscus);
+
+    var observer = new MutationObserver(updateGiscusTheme);
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["data-md-color-scheme"],
+    });
+  </script>
+</section>
+{% endif %}

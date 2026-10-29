@@ -1,0 +1,148 @@
+<!doctype html><html lang=zh class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="以复古贪吃蛇为例，说明如何在页面中嵌入交互式 HTML/JS 组件。"><meta name=author content=CedricHaskell><link href=https://cedrichaskell.github.io/WorkshopTemplate/zh/advanced/game-demo/ rel=canonical><link href=../customization/ rel=prev><link href=../../about/ rel=next><link rel=alternate href=../../../advanced/game-demo/ hreflang=en><link rel=alternate href=./ hreflang=zh><link rel=icon href=../../../assets/favicon.svg><meta name=generator content="mkdocs-1.6.1, mkdocs-material-9.8.0"><title>小游戏 Demo - Workshop Template</title><link rel=stylesheet href=../../../assets/stylesheets/main.57a0d79d.min.css><link rel=stylesheet href=../../../assets/stylesheets/palette.fb2fffe2.min.css><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback"><style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style><script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script></head> <body dir=ltr data-md-color-scheme=default data-md-color-primary=indigo data-md-color-accent=indigo> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#demo class=md-skip> 跳转至 </a> </div> <div data-md-component=announce> </div> <header class=md-header data-md-component=header> <nav class="md-header__inner md-grid" aria-label=页眉> <a href=../../ title="Workshop Template" class="md-header__button md-logo" aria-label="Workshop Template" data-md-component=logo> <img src=../../../assets/logo.svg alt=logo> </a> <label class="md-header__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg> </label> <div class=md-header__title data-md-component=header-title> <div class=md-header__ellipsis> <div class=md-header__topic> <span class=md-ellipsis> Workshop Template </span> </div> <div class=md-header__topic data-md-component=header-topic> <span class=md-ellipsis> 小游戏 Demo </span> </div> </div> </div> <form class=md-header__option data-md-component=palette> <input class=md-option data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme=default data-md-color-primary=indigo data-md-color-accent=indigo aria-label="Switch to dark mode" type=radio name=__palette id=__palette_0> <label class="md-header__button md-icon" title="Switch to dark mode" for=__palette_1 hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg> </label> <input class=md-option data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme=slate data-md-color-primary=cyan data-md-color-accent=cyan aria-label="Switch to light mode" type=radio name=__palette id=__palette_1> <label class="md-header__button md-icon" title="Switch to light mode" for=__palette_0 hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg> </label> </form> <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script> <div class=md-header__option> <div class=md-select> <button class="md-header__button md-icon" aria-label=选择当前语言> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg> </button> <div class=md-select__inner> <ul class=md-select__list> <li class=md-select__item> <a href=../../../advanced/game-demo/ hreflang=en class=md-select__link> English </a> </li> <li class=md-select__item> <a href=./ hreflang=zh class=md-select__link> 简体中文 </a> </li> </ul> </div> </div> </div> <label class="md-header__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=搜索 placeholder=搜索 autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query required> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg> </label> <nav class=md-search__options aria-label=查找> <a href=javascript:void(0) class="md-search__icon md-icon" title=分享 aria-label=分享 data-clipboard data-clipboard-text data-md-component=search-share tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg> </a> <button type=reset class="md-search__icon md-icon" title=清空当前内容 aria-label=清空当前内容 tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> </button> </nav> </form> <div class=md-search__output> <div class=md-search__scrollwrap tabindex=0 data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> 正在初始化搜索引擎 </div> <ol class=md-search-result__list role=presentation></ol> </div> </div> </div> </div> </div> <div class=md-header__source> <a href=https://github.com/CedricHaskell/WorkshopTemplate title=前往仓库 class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg> </div> <div class=md-source__repository> WorkshopTemplate </div> </a> </div> </nav> </header> <div class=md-container data-md-component=container> <nav class=md-tabs aria-label=标签 data-md-component=tabs> <div class=md-grid> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../../ class=md-tabs__link> 首页 </a> </li> <li class=md-tabs__item> <a href=../../getting-started/introduction/ class=md-tabs__link> 快速上手 </a> </li> <li class=md-tabs__item> <a href=../../authoring/new-pages/ class=md-tabs__link> 内容编写 </a> </li> <li class=md-tabs__item> <a href=../../discussion/ class=md-tabs__link> 讨论区 </a> </li> <li class="md-tabs__item md-tabs__item--active"> <a href=../customization/ class=md-tabs__link> 高级功能 </a> </li> <li class=md-tabs__item> <a href=../../about/ class=md-tabs__link> 关于 </a> </li> </ul> </div> </nav> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=sidebar data-md-type=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary md-nav--lifted" aria-label=导航栏 data-md-level=0> <label class=md-nav__title for=__drawer> <a href=../../ title="Workshop Template" class="md-nav__button md-logo" aria-label="Workshop Template" data-md-component=logo> <img src=../../../assets/logo.svg alt=logo> </a> Workshop Template </label> <div class=md-nav__source> <a href=https://github.com/CedricHaskell/WorkshopTemplate title=前往仓库 class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg> </div> <div class=md-source__repository> WorkshopTemplate </div> </a> </div> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../ class=md-nav__link> <span class=md-ellipsis> 首页 </span> </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_2> <label class=md-nav__link for=__nav_2 id=__nav_2_label tabindex=0> <span class=md-ellipsis> 快速上手 </span> <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_2_label aria-expanded=false> <label class=md-nav__title for=__nav_2> <span class="md-nav__icon md-icon"></span> 快速上手 </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../getting-started/introduction/ class=md-nav__link> <span class=md-ellipsis> 模板介绍 </span> </a> </li> <li class=md-nav__item> <a href=../../getting-started/deployment/ class=md-nav__link> <span class=md-ellipsis> 部署到 GitHub Pages </span> </a> </li> <li class=md-nav__item> <a href=../../getting-started/structure/ class=md-nav__link> <span class=md-ellipsis> 结构总览 </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_3> <label class=md-nav__link for=__nav_3 id=__nav_3_label tabindex=0> <span class=md-ellipsis> 内容编写 </span> <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_3_label aria-expanded=false> <label class=md-nav__title for=__nav_3> <span class="md-nav__icon md-icon"></span> 内容编写 </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../authoring/new-pages/ class=md-nav__link> <span class=md-ellipsis> 新建页面 </span> </a> </li> <li class=md-nav__item> <a href=../../authoring/markdown/ class=md-nav__link> <span class=md-ellipsis> Markdown 基础 </span> </a> </li> <li class=md-nav__item> <a href=../../authoring/theme-colors/ class=md-nav__link> <span class=md-ellipsis> 主题与配色 </span> </a> </li> <li class=md-nav__item> <a href=../../authoring/media/ class=md-nav__link> <span class=md-ellipsis> 图片与视频 </span> </a> </li> <li class=md-nav__item> <a href=../../authoring/bilingual/ class=md-nav__link> <span class=md-ellipsis> 双语支持 </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../../discussion/ class=md-nav__link> <span class=md-ellipsis> 讨论区 </span> </a> </li> <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_5 checked> <label class=md-nav__link for=__nav_5 id=__nav_5_label tabindex> <span class=md-ellipsis> 高级功能 </span> <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_5_label aria-expanded=true> <label class=md-nav__title for=__nav_5> <span class="md-nav__icon md-icon"></span> 高级功能 </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../customization/ class=md-nav__link> <span class=md-ellipsis> 自定义 </span> </a> </li> <li class="md-nav__item md-nav__item--active"> <input class="md-nav__toggle md-toggle" type=checkbox id=__toc> <label class="md-nav__link md-nav__link--active" for=__toc> <span class=md-ellipsis> 小游戏 Demo </span> <span class="md-nav__icon md-icon"></span> </label> <a href=./ class="md-nav__link md-nav__link--active"> <span class=md-ellipsis> 小游戏 Demo </span> </a> <nav class="md-nav md-nav--secondary" aria-label=目录> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> 目录 </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#_1 class=md-nav__link> <span class=md-ellipsis> 演示 </span> </a> </li> <li class=md-nav__item> <a href=#_2 class=md-nav__link> <span class=md-ellipsis> 工作原理 </span> </a> </li> <li class=md-nav__item> <a href=#_3 class=md-nav__link> <span class=md-ellipsis> 把代码抽取到共享文件 </span> </a> </li> <li class=md-nav__item> <a href=#_4 class=md-nav__link> <span class=md-ellipsis> 讲义中的用法 </span> </a> </li> <li class=md-nav__item> <a href=#_5 class=md-nav__link> <span class=md-ellipsis> 注意事项 </span> </a> </li> </ul> </nav> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../../about/ class=md-nav__link> <span class=md-ellipsis> 关于 </span> </a> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=sidebar data-md-type=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label=目录> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> 目录 </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#_1 class=md-nav__link> <span class=md-ellipsis> 演示 </span> </a> </li> <li class=md-nav__item> <a href=#_2 class=md-nav__link> <span class=md-ellipsis> 工作原理 </span> </a> </li> <li class=md-nav__item> <a href=#_3 class=md-nav__link> <span class=md-ellipsis> 把代码抽取到共享文件 </span> </a> </li> <li class=md-nav__item> <a href=#_4 class=md-nav__link> <span class=md-ellipsis> 讲义中的用法 </span> </a> </li> <li class=md-nav__item> <a href=#_5 class=md-nav__link> <span class=md-ellipsis> 注意事项 </span> </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content data-md-component=content> <article class="md-content__inner md-typeset"> <div><h1 id=demo>小游戏 Demo<a class=headerlink href=#demo title="Permanent link">¶</a></h1> <p><code>md_in_html</code> 扩展会把任意 HTML、CSS 与 JavaScript 原样传递到页面。这让讲义具备交互性：练习可以是测验、模拟器或直接运行在浏览器中的游戏。</p> <p>下面的贪吃蛇游戏内嵌于本页，不使用任何外部代码。代码刻意保持精简——一个 canvas、一个循环——以便看清机制。用方向键（或 W/A/S/D）控制方向。</p> <h2 id=_1>演示<a class=headerlink href=#_1 title="Permanent link">¶</a></h2> <div id=snake-game data-label-score=得分 data-label-restart=重新开始 data-label-over="游戏结束——得分 {score}。"></div> <style>
+  #snake-game { position: relative; width: 320px; max-width: 100%; background: #000; border: 2px solid #33ff33; padding: 12px; font-family: monospace; color: #33ff33; }
+  .snake-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  .snake-bar span { text-transform: uppercase; font-size: 0.9rem; }
+  .snake-btn { background: #000; color: #33ff33; border: 1px solid #33ff33; padding: 2px 8px; font-family: inherit; font-size: 0.9rem; text-transform: uppercase; cursor: pointer; }
+  .snake-btn:hover { background: #33ff33; color: #000; }
+  .snake-board { display: block; border: 1px solid #33ff33; }
+  .snake-win { position: absolute; inset: 0; background: #000; border: 2px solid #33ff33; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; padding: 8px; }
+  .snake-win p { margin: 0; }
+</style> <script>
+  (function () {
+    "use strict";
+
+    var root = document.getElementById("snake-game");
+    if (!root) return;
+
+    var L = {
+      score: root.dataset.labelScore || "Score",
+      restart: root.dataset.labelRestart || "New game",
+      over: root.dataset.labelOver || "Game over — score {score}."
+    };
+
+    var CELL = 16;   // board cell size in px
+    var N = 20;      // board is N by N cells
+    var TICK = 120;  // ms per game step
+
+    var bar = document.createElement("div");
+    bar.className = "snake-bar";
+    var scoreEl = document.createElement("span");
+    var restartBtn = document.createElement("button");
+    restartBtn.type = "button";
+    restartBtn.className = "snake-btn";
+    restartBtn.textContent = "[ " + L.restart + " ]";
+    bar.appendChild(scoreEl);
+    bar.appendChild(restartBtn);
+
+    var canvas = document.createElement("canvas");
+    canvas.className = "snake-board";
+    canvas.width = N * CELL;
+    canvas.height = N * CELL;
+    root.appendChild(bar);
+    root.appendChild(canvas);
+    var ctx = canvas.getContext("2d");
+
+    var snake, dir, nextDir, food, score, timer, dead;
+
+    function render() {
+      scoreEl.textContent = L.score + ": " + score;
+    }
+
+    function placeFood() {
+      do {
+        food = { x: Math.floor(Math.random() * N), y: Math.floor(Math.random() * N) };
+      } while (snake.some(function (s) { return s.x === food.x && s.y === food.y; }));
+    }
+
+    function draw() {
+      ctx.fillStyle = "#000";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      // the food: a hollow square
+      ctx.strokeStyle = "#33ff33";
+      ctx.strokeRect(food.x * CELL + 3, food.y * CELL + 3, CELL - 6, CELL - 6);
+      // the snake: filled squares
+      ctx.fillStyle = "#33ff33";
+      snake.forEach(function (s) {
+        ctx.fillRect(s.x * CELL + 1, s.y * CELL + 1, CELL - 2, CELL - 2);
+      });
+    }
+
+    function step() {
+      dir = nextDir;
+      var head = snake[0];
+      var nx = head.x + dir.x;
+      var ny = head.y + dir.y;
+      if (nx < 0 || ny < 0 || nx >= N || ny >= N) return gameOver();
+      var grow = nx === food.x && ny === food.y;
+      // self collision; the tail cell is safe when not growing
+      var limit = grow ? snake.length : snake.length - 1;
+      for (var i = 0; i < limit; i++) {
+        if (snake[i].x === nx && snake[i].y === ny) return gameOver();
+      }
+      snake.unshift({ x: nx, y: ny });
+      if (grow) {
+        score++;
+        render();
+        placeFood();
+      } else {
+        snake.pop();
+      }
+      draw();
+    }
+
+    function gameOver() {
+      clearInterval(timer);
+      timer = null;
+      dead = true;
+      var overlay = document.createElement("div");
+      overlay.className = "snake-win";
+      var p = document.createElement("p");
+      p.textContent = L.over.replace("{score}", score);
+      overlay.appendChild(p);
+      var again = document.createElement("button");
+      again.type = "button";
+      again.className = "snake-btn";
+      again.textContent = "[ " + L.restart + " ]";
+      again.addEventListener("click", reset);
+      overlay.appendChild(again);
+      root.appendChild(overlay);
+    }
+
+    function reset() {
+      var overlay = root.querySelector(".snake-win");
+      if (overlay) overlay.remove();
+      clearInterval(timer);
+      snake = [{ x: 10, y: 10 }, { x: 9, y: 10 }, { x: 8, y: 10 }];
+      dir = { x: 1, y: 0 };
+      nextDir = dir;
+      score = 0;
+      dead = false;
+      placeFood();
+      render();
+      draw();
+      timer = setInterval(step, TICK);
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (dead) return;
+      var d = null;
+      if (e.key === "ArrowUp" || e.key === "w") d = { x: 0, y: -1 };
+      if (e.key === "ArrowDown" || e.key === "s") d = { x: 0, y: 1 };
+      if (e.key === "ArrowLeft" || e.key === "a") d = { x: -1, y: 0 };
+      if (e.key === "ArrowRight" || e.key === "d") d = { x: 1, y: 0 };
+      if (!d) return;
+      e.preventDefault();
+      if (d.x === -dir.x && d.y === -dir.y) return;  // no 180-degree turns
+      nextDir = d;
+    });
+
+    restartBtn.addEventListener("click", reset);
+    reset();
+  })();
+</script> <h2 id=_2>工作原理<a class=headerlink href=#_2 title="Permanent link">¶</a></h2> <p>组件由三部分组成，全部直接写在 Markdown 文件中：</p> <ol> <li><strong>容器</strong> —— 一个空的 <code>&lt;div id="snake-game"&gt;</code>。它的 <code>data-*</code> 属性承载所有可见文字（得分、重新开始、结束提示）。脚本在启动时读取这些属性，因此同一份代码服务两种语言：本页的中文版传入中文标签，代码完全一致。</li> <li><strong>样式</strong> —— 一个作用于组件的 <code>&lt;style&gt;</code> 块。外观刻意采用极简复古终端风格：黑底绿字、等宽字体、硬直角边框、无动画。组件使用自己的固定配色而不跟随站点主题；另一种做法是使用 Material 的 CSS 变量（<code>--md-primary-fg-color</code>、<code>--md-code-bg-color</code> 等）让组件跟随主题与明暗模式。</li> <li><strong>脚本</strong> —— 一个自包含的 IIFE，在 canvas 上绘制棋盘，用 <code>setInterval</code> 驱动游戏循环，读取键盘输入并渲染得分。无任何库、无构建步骤。</li> </ol> <p>结束提示中的 <code>{score}</code> 占位符会被脚本替换为实际得分。</p> <h2 id=_3>把代码抽取到共享文件<a class=headerlink href=#_3 title="Permanent link">¶</a></h2> <p>出现在多个页面上的组件不应重复复制。生产化的形式是：容器留在页面中，样式与脚本移入只加载一次的共享文件：</p> <ol> <li>把 CSS 与 JS 移入 <code>docs/assets/js/my-widget.js</code>（JS 自行创建 <code>&lt;style&gt;</code> 元素；或把 CSS 放入 <code>docs/assets/css/</code> 并通过 <code>extra_css</code> 加载）。</li> <li> <p>全局注册脚本：</p> <div class="language-yaml highlight"><span class=filename>YAML</span><pre><span></span><code><span id=__span-0-1><a id=__codelineno-0-1 name=__codelineno-0-1 href=#__codelineno-0-1></a><span class=nt>extra_javascript</span><span class=p>:</span>
+</span><span id=__span-0-2><a id=__codelineno-0-2 name=__codelineno-0-2 href=#__codelineno-0-2></a><span class=w>  </span><span class="p p-Indicator">-</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">assets/js/my-widget.js</span>
+</span></code></pre></div> </li> <li> <p>使用守卫式初始化，让脚本在缺少容器的页面上什么都不做：</p> <div class="language-js highlight"><span class=filename>JavaScript</span><pre><span></span><code><span id=__span-1-1><a id=__codelineno-1-1 name=__codelineno-1-1 href=#__codelineno-1-1></a><span class=nb>document</span><span class=p>.</span><span class=nx>addEventListener</span><span class=p>(</span><span class=s2>"DOMContentLoaded"</span><span class=p>,</span><span class=w> </span><span class=kd>function</span><span class=w> </span><span class=p>()</span><span class=w> </span><span class=p>{</span>
+</span><span id=__span-1-2><a id=__codelineno-1-2 name=__codelineno-1-2 href=#__codelineno-1-2></a><span class=w>  </span><span class=kd>var</span><span class=w> </span><span class=nx>root</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=nb>document</span><span class=p>.</span><span class=nx>getElementById</span><span class=p>(</span><span class=s2>"my-widget"</span><span class=p>);</span>
+</span><span id=__span-1-3><a id=__codelineno-1-3 name=__codelineno-1-3 href=#__codelineno-1-3></a><span class=w>  </span><span class=k>if</span><span class=w> </span><span class=p>(</span><span class=nx>root</span><span class=p>)</span><span class=w> </span><span class=nx>initMyWidget</span><span class=p>(</span><span class=nx>root</span><span class=p>);</span>
+</span><span id=__span-1-4><a id=__codelineno-1-4 name=__codelineno-1-4 href=#__codelineno-1-4></a><span class=p>});</span>
+</span></code></pre></div> </li> </ol> <p>模板自带的 <code>mathjax.js</code> 用的就是这一模式。配置细节见<a href=../customization/ >自定义</a>。</p> <h2 id=_4>讲义中的用法<a class=headerlink href=#_4 title="Permanent link">¶</a></h2> <ul> <li>带得分与 <code>localStorage</code> 跨会话记忆的测验。</li> <li>词汇或命令的闪卡。</li> <li>通过 CodePen 或 Replit 的 <code>&lt;iframe&gt;</code> 内嵌代码运行器，用于编程练习。</li> <li>用少量按钮与 canvas 实现的小型模拟器（例如算法可视化）。</li> </ul> <h2 id=_5>注意事项<a class=headerlink href=#_5 title="Permanent link">¶</a></h2> <ul> <li>组件保持零依赖、体积小；它们随每次访问加载。</li> <li>在两种语言版本上都测试组件——所有可见文字都应来自容器的 <code>data-*</code> 属性。</li> <li>交互代码运行在访问者的浏览器中，不要嵌入密钥或 API key。</li> <li>脚本与样式块被 Markdown 解析器视为原始内容；避免写出可能被误认为标记的字符串（例如脚本中出现字面的 <code>&lt;/script&gt;</code>）。</li> <li>棋盘绘制在 canvas 上，屏幕阅读器无法读取；正式使用时，应在周围文字中说明操作方式。</li> </ul></div> </article> </div> <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script> </div> <button type=button class="md-top md-icon" data-md-component=top hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg> 回到页面顶部 </button> </main> <footer class=md-footer> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> </div> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <script id=__config type=application/json>{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script> <script src=../../../assets/javascripts/bundle.c21346df.min.js></script> <script src=../../../javascripts/mathjax.js></script> <script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script> <script src=https://unpkg.com/mermaid@10/dist/mermaid.min.js></script> </body> </html>
