@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-29
+
+### Changed
+
+- Bump `mkdocs-material` from `9.7.0` to `9.8.0`.
+
+### Security
+
+- Update `mkdocs-material` to 9.8.0 to include fixes for known vulnerabilities, including the `search.suggest` DOM XSS issue (CVE-2026-73295) and dependency-level CVEs in Jinja2, Markdown, Pygments, PyMdown Extensions, Requests, Pillow, CairoSVG, and GitPython.
+
 ## [0.1.0] - 2026-10-28
 
 Initial release.
